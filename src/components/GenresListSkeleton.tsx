@@ -5,7 +5,7 @@ export default function GenresListSkeleton() {
   return (
     <Flex height='100vh' direction="column" justifyContent='space-between'>
       {skeletons.map((skeleton) => (
-        <Flex alignItems='center'>
+        <Flex key={skeleton} alignItems='center'>
           <Skeleton  margin='12px 0' height="40px" width="30%" />
           <Spacer />
           <Skeleton flexGrow='1' height="20px" width="50%" />
