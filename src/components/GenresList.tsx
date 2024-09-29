@@ -14,7 +14,7 @@ export default function GenresList({ selectedGenre, onSelectedGenre }: Props) {
 
   return (
     <>
-      <Heading color='white' fontSize='2xl' marginBottom={3}>Genres</Heading>
+      <Heading fontSize='2xl' marginBottom={3}>Genres</Heading>
       <List>
         {isLoading && <GenresListSkeleton />}
         {genres.map((genre) => (
